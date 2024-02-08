@@ -451,8 +451,15 @@ function getIdentityMatrix(n) {
  *    getIndicesOfOddNumbers([2, 4, 6, 8, 10]) => []
  *    getIndicesOfOddNumbers([11, 22, 33, 44, 55]) => [0, 2, 4]
  */
-function getIndicesOfOddNumbers(/* numbers */) {
-  throw new Error('Not implemented');
+function getIndicesOfOddNumbers(numbers) {
+  const arrFilter = numbers.filter((item) => item % 2 !== 0);
+  const arrMap = arrFilter.map((item) => {
+    const index = numbers.indexOf(item);
+    let newItem = item;
+    newItem = index;
+    return newItem;
+  });
+  return arrMap;
 }
 
 /**
